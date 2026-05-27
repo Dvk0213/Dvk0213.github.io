@@ -438,14 +438,48 @@ main {
 }
 
 /* Publications */
-.pub-entry .entry-title a {
+.pub-entry {
+  position: relative;
+  padding-left: 1.1em;
+  margin-bottom: 22px;
+}
+
+.pub-entry::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
   color: var(--text);
+  line-height: 1.45;
+}
+
+.pub-entry:last-child {
+  margin-bottom: 0;
+}
+
+.pub-entry .entry-title {
+  font-size: 16px;
   font-weight: bold;
-  border-bottom: 1px solid var(--text);
+  line-height: 1.45;
+  margin-bottom: 0.1rem;
+}
+
+.pub-entry .entry-title .katex {
+  font-size: 1em;
+}
+
+.small-caps {
+  font-variant: small-caps;
+  letter-spacing: 0.02em;
+}
+
+.pub-entry .entry-title a {
+  color: #07889b;
+  font-weight: bold;
+  border-bottom: none;
 }
 
 .pub-entry .entry-title a:hover {
-  border-bottom-color: var(--text-muted);
   color: var(--text-muted);
   text-decoration: none;
 }
@@ -453,17 +487,36 @@ main {
 .pub-status {
   font-size: 14px;
   color: var(--text-muted);
-  margin-bottom: 0.15rem;
+  margin-bottom: 0.1rem;
 }
 
 .pub-authors {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.45;
   color: var(--text);
+  margin-bottom: 0.1rem;
 }
 
 .pub-authors strong {
   font-weight: bold;
+}
+
+.pub-links {
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.pub-links a {
+  color: #07889b;
+}
+
+.pub-links a:hover {
+  color: var(--text-muted);
+  text-decoration: none;
+}
+
+.misc-heading-spaced {
+  margin-top: 28px;
 }
 
 /* ── Responsive ───────────────────────────────────────────── */
