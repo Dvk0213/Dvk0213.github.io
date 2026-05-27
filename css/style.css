@@ -558,6 +558,12 @@ main {
   .pub-authors {
     margin-bottom: 12px;
   }
+
+  .misc-footer .band-name {
+    display: block;
+    margin-top: 0.35em;
+    white-space: nowrap;
+  }
 }
 
 @media (max-width: 400px) {
