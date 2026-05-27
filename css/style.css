@@ -476,16 +476,31 @@ main {
     padding: 20px 0 12px;
   }
 
+  .header-inner {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .header-inner nav {
+    width: 100%;
+  }
+
   .site-name {
     font-size: 18px;
+    align-self: flex-start;
   }
 
   .site-nav {
-    gap: 20px;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 6px;
   }
 
   .site-nav a {
-    font-size: 15px;
+    font-size: 13px;
+    white-space: nowrap;
   }
 
   main {
@@ -501,12 +516,35 @@ main {
     width: 100%;
     max-width: var(--sidebar-width);
     margin: 0 auto;
-    align-items: flex-start;
+    align-items: center;
     order: -1;
   }
 
   .about-sidebar img {
     width: 200px;
+  }
+
+  .sidebar-email {
+    text-align: center;
+    align-self: stretch;
+    margin-bottom: 8px;
+  }
+
+  .sidebar-links {
+    text-align: center;
+    align-self: stretch;
+  }
+
+  .sidebar-links li {
+    margin-bottom: 6px;
+  }
+
+  .sidebar-links li:last-child {
+    margin-bottom: 0;
+  }
+
+  .sidebar-links a {
+    justify-content: center;
   }
 
   .page-title {
@@ -518,5 +556,15 @@ main {
   .entry-detail,
   .pub-authors {
     margin-bottom: 12px;
+  }
+}
+
+@media (max-width: 400px) {
+  .site-nav {
+    gap: 4px;
+  }
+
+  .site-nav a {
+    font-size: 12px;
   }
 }
