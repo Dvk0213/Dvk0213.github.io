@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Shengqi — personal website">
+  <title>Shengqi</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+  <script defer src="js/katex-render.js"></script>
+</head>
+<body>
+
+  <div class="page-wrap">
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="site-name">Shengqi Qiu</a>
+      <nav>
+        <ul class="site-nav">
+          <li><a href="index.html" class="active">About</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="CV.pdf" target="_blank" rel="noopener">CV</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="misc.html">Misc.</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="about-grid">
+
+      <div class="about-text">
+        <h1>Hello!</h1>
+
+        <p>
+          I am Shengqi, a senior undergraduate in Mathematics and Computer Science at
+          University of Wisconsin-Madison (UW-Madison) working with
+          <a class="text-link" href="https://pages.cs.wisc.edu/~fredsala/" target="_blank" rel="noopener">Prof. Frederic Sala</a>'s
+          <a class="text-link" href="https://sprocketlab.github.io/" target="_blank" rel="noopener">Sprocket Lab</a>
+          and <a class="text-link" href="https://people.math.wisc.edu/~valko/" target="_blank" rel="noopener">Prof. Benedek Valko</a>.
+        </p>
+
+        <p>
+          My research interests are in data-centric AI, Mathematics, and
+          trustworthy ML. In particular, I work on:
+        </p>
+
+        <ul class="about-list">
+          <li>
+            <strong>Programmatic Evaluation:</strong> Developing program-as-a-judge
+            methods that distill LLM judging logic into executable Python functions,
+            then aggregate noisy program outputs through weak supervision to produce
+            reliable preference labels with low cost and high throughput.
+          </li>
+          <li>
+            <strong>Random Matrix Identities:</strong> Studying two-point correlation
+            functions of the $\mathrm{Sine}_\beta$ process through differential equations
+            and symbolic computation. The project develops a framework for deriving
+            explicit correlation formulas by reducing, simplifying, and solving the
+            differential-equation systems associated with classical beta ensembles. In
+            the $\beta = 6$ case, I independently discovered a factorization that
+            turns a complex third-order ODE into a solvable decomposition of lower-order ODEs, leading
+            to an explicit candidate formula for the pair correlation function.
+          </li>
+          <li>
+            <strong>Robustness Verification:</strong> Developing tools for certifying
+            neural network robustness, especially for Transformer models under discrete
+            text perturbations. I study how to extend fast certification methods from
+            convolutional text classifiers to attention-based architectures, deriving
+            spectral-norm Jacobian bounds for the self-attention operator.
+          </li>
+        </ul>
+      </div>
+
+      <aside class="about-sidebar">
+        <img src="images/my_figure.jpg" alt="Shengqi Qiu" width="240">
+        <p class="sidebar-email">Email: sqiu53 + at + wisc + dot + edu</p>
+        <ul class="sidebar-links">
+          <li>
+            <a href="https://github.com/Dvk0213" target="_blank" rel="noopener">
+              <i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/shengqi-qiu-653492245/" target="_blank" rel="noopener">
+              <i class="fab fa-linkedin-in icon" aria-hidden="true"></i> LinkedIn
+            </a>
+          </li>
+          <li>
+            <a href="https://x.com/ShengqiQ213" target="_blank" rel="noopener">
+              <i class="fab fa-twitter icon" aria-hidden="true"></i> X
+            </a>
+          </li>
+        </ul>
+      </aside>
+
+    </div>
+
+    <section class="news-section" id="news">
+      <h2 class="news-heading">News</h2>
+      <ul class="news-list">
+        <li>
+          New preprint for Programmatic Judge: $\textbf{\textsc{Pajama}}$
+        </li>
+        <li>
+          New poster for Madison Experimental Mathematics Lab(MXM): Identities from Random Matrices
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  </div>
+
+</body>
+</html>

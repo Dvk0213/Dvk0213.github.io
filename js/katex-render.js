@@ -1,0 +1,15 @@
+document.addEventListener("DOMContentLoaded", function () {
+  if (typeof renderMathInElement === "function") {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: "$$", right: "$$", display: true },
+        { left: "$", right: "$", display: false },
+      ],
+      throwOnError: false,
+      trust: true,
+      macros: {
+        "\\textsc": "\\htmlStyle{font-variant:small-caps}{\\text{#1}}",
+      },
+    });
+  }
+});
