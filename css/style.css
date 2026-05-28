@@ -239,6 +239,10 @@ main {
 }
 
 .sidebar-email {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.35em;
   font-size: 14px;
   line-height: 1.45;
   color: var(--text);
@@ -265,8 +269,12 @@ main {
   gap: 0.35em;
 }
 
-.sidebar-links i {
-  font-size: 0.95em;
+.sidebar-icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  margin-top: -1px;
 }
 
 .sidebar-links a:hover {
