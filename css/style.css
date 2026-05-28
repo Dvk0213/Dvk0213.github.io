@@ -573,6 +573,9 @@ main {
   }
 
   .sidebar-email {
+    display: flex;
+    justify-content: center;
+    width: 100%;
     text-align: center;
     align-self: stretch;
     margin-bottom: 8px;
