@@ -8,8 +8,13 @@
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%F0%9F%90%9F</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Libertinus+Serif&family=Shippori+Mincho+B1:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+  <script defer src="js/katex-render.js"></script>
+  <script defer src="js/misc-jog.js"></script>
 </head>
 <body>
 
@@ -43,6 +48,46 @@
         <li>CS 577: Intro to Algorithms</li>
         <li>CS 639: Intro to Foundation Models</li>
       </ul>
+    </section>
+
+    <section class="misc-section jog-section">
+      <h2 class="misc-heading">Jog Your Mind</h2>
+
+      <article class="jog-item">
+        <div class="jog-problem" role="button" tabindex="0" aria-expanded="false" aria-controls="jog-solution-1">
+          <p>Show that if $1-ab$ is invertible in a ring then so is $1-ba$.</p>
+          <span class="jog-hint">Click to reveal solution</span>
+        </div>
+        <div id="jog-solution-1" class="jog-solution" hidden>
+          <p>We note first that</p>
+          <p>$$b-bab=(1-ba)b=b(1-ab).$$</p>
+          <p>Suppose that $1-ab$ is invertible, and let</p>
+          <p>$$c=(1-ab)^{-1}.$$</p>
+          <p>We claim that $1+bca$ is the inverse of $1-ba$.</p>
+          <p>Indeed,</p>
+          <p>
+            $$\begin{align*}
+            (1-ba)(bca+1)
+            &amp;=(1-ba)bca+1-ba \\
+            &amp;=b(1-ab)ca+1-ba \\
+            &amp;=ba+1-ba \\
+            &amp;=1.
+            \end{align*}$$
+          </p>
+          <p>Similarly,</p>
+          <p>
+            $$\begin{align*}
+            (bca+1)(1-ba)
+            &amp;=bca+1-bcaba-ba \\
+            &amp;=1-ba+bc(a-aba) \\
+            &amp;=1-ba+bc(1-ab)a \\
+            &amp;=1-ba+ba \\
+            &amp;=1.
+            \end{align*}$$
+          </p>
+          <p>Therefore $1+bca$ is a two-sided inverse of $1-ba$. Hence $1-ba$ is invertible.</p>
+        </div>
+      </article>
     </section>
 
     <p class="misc-footer">
