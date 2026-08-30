@@ -409,6 +409,9 @@ main {
 }
 
 .band-name {
+  display: inline-block;
+  width: fit-content;
+  max-width: 100%;
   font-family: "Shippori Mincho B1", "Yu Mincho", "Hiragino Mincho ProN", serif;
   font-weight: 600;
   font-size: 1.4em;
@@ -416,9 +419,11 @@ main {
   color: inherit;
   cursor: pointer;
   padding: 0.05em 0.12em;
+  -webkit-tap-highlight-color: transparent;
 }
 
-a.band-name:hover {
+a.band-name:hover,
+a.band-name:active {
   color: #fff;
   background: #000;
   text-decoration: none;
@@ -692,7 +697,8 @@ a.band-name:hover {
   }
 
   .misc-footer .band-name {
-    display: block;
+    display: inline-block;
+    width: fit-content;
     margin-top: 0.35em;
     white-space: nowrap;
   }
