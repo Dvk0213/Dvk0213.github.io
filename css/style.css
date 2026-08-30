@@ -413,7 +413,15 @@ main {
   font-weight: 600;
   font-size: 1.4em;
   letter-spacing: 0.12em;
-  color: var(--text);
+  color: inherit;
+  cursor: pointer;
+  padding: 0.05em 0.12em;
+}
+
+a.band-name:hover {
+  color: #fff;
+  background: #000;
+  text-decoration: none;
 }
 
 /* Timeline */
