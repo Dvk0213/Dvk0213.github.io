@@ -72,15 +72,30 @@ img {
 
 .site-name {
   display: inline-block;
-  font-family: var(--font);
+  font-family: 'Inter', var(--font);
   font-size: 20px;
-  font-weight: bold;
-  letter-spacing: -0.01em;
-  color: #399EE3;
+  font-weight: 700;
+  letter-spacing: -0.025em;
   text-decoration: none;
+  color: var(--link);
+  background-image: linear-gradient(to right, #000000, var(--link));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-font-smoothing: antialiased;
 }
 
 .site-name:hover {
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+a.text-link,
+span.text-link {
+  color: var(--link);
+}
+
+a.text-link:hover {
   color: var(--text-muted);
   text-decoration: none;
 }
@@ -140,13 +155,6 @@ main {
   color: var(--text);
 }
 
-.about-text a.text-link {
-  color: var(--link);
-}
-
-.about-text a.text-link:hover {
-  color: var(--text-muted);
-}
 
 .about-list {
   list-style: disc;
@@ -336,6 +344,12 @@ main {
 
 .jog-section {
   margin-top: 36px;
+}
+
+.jog-section .misc-heading {
+  font-family: "Snell Roundhand", "Snell Roundhand Black", "Great Vibes", cursive;
+  font-weight: 900;
+  font-style: normal;
 }
 
 .jog-item + .jog-item {
