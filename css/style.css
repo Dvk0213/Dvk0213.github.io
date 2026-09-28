@@ -348,7 +348,7 @@ main {
 }
 
 .misc-list li:last-child {
-  margin-bottom: 0;
+  margin-bottom: 6px;
 }
 
 .misc-footer {
