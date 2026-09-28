@@ -319,6 +319,10 @@ main {
   line-height: 1.45;
 }
 
+.misc-section + .misc-section {
+  margin-top: 36px;
+}
+
 .misc-heading {
   font-size: 18px;
   font-weight: bold;
