@@ -47,33 +47,53 @@
         </p>
 
         <p>
-          My research interests are in data-centric AI, foundation models, Mathematics, and
-          trustworthy ML. In particular, I work on:
+          My research interests are in Data-Centric AI, Foundation Models, and Math. In particular, I work on:
         </p>
 
         <ul class="about-list">
           <li>
-            <strong>Programmatic Evaluation:</strong> Developing program-as-a-judge
-            methods that distill LLM judging logic into executable Python functions,
-            then aggregate noisy program outputs through weak supervision to produce
-            reliable preference labels with low cost and high throughput.
-          </li>
+            <strong>Hybrid Program–LLM Evaluation:</strong>
+            Developed $\textbf{\textsc{Pajama}}$, a hybrid evaluation
+            framework that distills LLM judging logic into executable Python
+            programs, aggregates their predictions via weak supervision, and
+            selectively routes low-confidence cases to LLM judges using
+            probabilistic confidence estimates. The system advances the
+            <strong>accuracy–throughput Pareto frontier</strong> and enables
+            competitive reward-model training with
+            <strong>45–50× lower labeling cost</strong> than GPT-4-based supervision.
+          </li>     
+
           <li>
-            <strong>Random Matrix Identities:</strong> Studying two-point correlation
-            functions of the $\mathrm{Sine}_\beta$ process through ODEs
-            and symbolic computation. The project develops a framework for deriving
-            explicit correlation formulas by reducing, simplifying, and solving the
-            ODE systems associated with classical beta ensembles. In
-            the $\beta = 6$ case, I independently discovered a factorization that
-            turns a complex third-order ODE into a solvable decomposition of lower-order ODEs, leading
-            to an explicit candidate formula for the pair correlation function.
+            <strong>Hybrid Transformer–SSM Architectures:</strong>
+            Investigated how layer ordering affects the expressivity of
+            hybrid Transformer–SSM(TF-SSM) models under resource constraints.
+            Designed two novel tasks,
+            <strong>Segmented Retrieval</strong> and
+            <strong>Exact Copy</strong>, that reveal the advantages of
+            <strong>TF-first over SSM-first architectures</strong>.
+            Established <strong>recurrent-state memory lower bounds</strong>
+            for SSM-first models, developed efficient TF-first
+            constructions, and extended the theoretical results to
+            <strong>convolutional SSMs, including Mamba</strong>.
+            Empirically validated the theoretical predictions, with
+            TF-first hybrids achieving
+            <strong>100% accuracy</strong> on Segmented Retrieval,
+            compared to <strong>below 50%</strong> for the
+            competing two-layer architectures.
           </li>
+
           <li>
-            <strong>Robustness Verification:</strong> Developing tools for certifying
-            robustness of Transformer under discrete
-            text perturbations. I study how to extend fast certification methods from
-            convolutional text classifiers to attention-based architectures, and deriving
-            spectral-norm Jacobian bounds for the self-attention operator.
+            <strong>Random Matrix Identities:</strong>
+            Investigated the two-point correlation function of the
+            $\mathrm{Sine}_\beta$ process through ODEs and symbolic
+            computation. For $\beta=6$, I independently discovered
+            an <strong>operator factorization</strong> that reduces
+            a third-order ODE to solvable lower-order equations,
+            enabling a <strong>new explicit Bessel-function
+            representation of the pair correlation function</strong>.
+            We further derived its large-$\lambda$ asymptotic
+            expansion and established agreement with Forrester's
+            earlier results.
           </li>
         </ul>
       </div>
@@ -118,16 +138,10 @@
       <h2 class="news-heading">News</h2>
       <ul class="news-list">
         <li>
-          MXM project is concluded into the paper: <a class="news-link" href="https://arxiv.org/abs/2607.26223" target="_blank" rel="noopener">The pair correlation function of the $\mathrm{Sine}_6$ process</a>
+          The Madison Experimental Mathematics Lab(MXM) project is concluded into the paper: <a class="news-link" href="https://arxiv.org/abs/2607.26223" target="_blank" rel="noopener">The pair correlation function of the $\mathrm{Sine}_6$ process</a>
         </li>
         <li>
           X post for Programmatic Judge($\textbf{\textsc{Pajama}}$): <a class="news-link" href="https://x.com/ShengqiQ213/status/2072794594463396085" target="_blank" rel="noopener">Link</a>
-        </li>
-        <li>
-          Paper for Programmatic Judge: $\textbf{\textsc{Pajama}}$
-        </li>
-        <li>
-          Poster for Madison Experimental Mathematics Lab(MXM): Identities from Random Matrices
         </li>
       </ul>
     </section>
