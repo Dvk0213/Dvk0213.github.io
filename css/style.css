@@ -548,24 +548,49 @@ a.band-name:active {
   margin-bottom: 22px;
 }
 
-.pub-entry::before {
-  content: "•";
-  position: absolute;
-  left: 0;
-  top: 0;
-  color: var(--text);
-  line-height: 1.45;
-}
-
 .pub-entry:last-child {
   margin-bottom: 0;
 }
 
+.pub-entry-divided {
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
 .pub-entry .entry-title {
+  position: relative;
   font-size: 16px;
   font-weight: bold;
   line-height: 1.45;
   margin-bottom: 0.1rem;
+}
+
+.pub-entry .entry-title::before {
+  content: "•";
+  position: absolute;
+  left: -1.1em;
+  top: 0;
+  font-size: 14px;
+  font-weight: normal;
+  color: var(--text);
+  line-height: 1.45;
+}
+
+.pub-figure {
+  display: flex;
+  gap: 12px;
+  max-width: 720px;
+  margin-bottom: 10px;
+}
+
+.pub-figure img {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.pub-figure-narrow {
+  max-width: 420px;
+  margin-left: max(0px, calc((100% - 420px) / 2 - 40px));
 }
 
 .pub-entry .entry-title .katex {
