@@ -70,16 +70,23 @@ img {
 
 /* ── Profile Sidebar ──────────────────────────────────────── */
 .profile-sidebar {
-  /* header top padding + gap between .site-name line box and its cap height */
+  /* header top padding + gap between the nav line box and its cap height */
   padding-top: 31px;
   font-size: 14px;
+  line-height: 1.45;
+}
+
+.profile-sidebar .sidebar-name {
+  display: block;
+  width: fit-content;
+  margin: 0 auto 16px;
   line-height: 1.45;
 }
 
 .profile-photo {
   width: var(--sidebar-width);
   height: auto;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 }
 
 .profile-links {
@@ -122,7 +129,12 @@ img {
 .header-inner {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
+  min-height: 29px;
+}
+
+.header-inner .site-name {
+  display: none;
 }
 
 .site-name {
@@ -647,6 +659,14 @@ a.band-name:active {
 
   .header-inner nav {
     width: 100%;
+  }
+
+  .header-inner .site-name {
+    display: inline-block;
+  }
+
+  .profile-sidebar .sidebar-name {
+    display: none;
   }
 
   .site-name {
