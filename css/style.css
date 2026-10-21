@@ -674,6 +674,7 @@ a.band-name:active {
   .page-wrap {
     display: flex;
     flex-direction: column;
+    align-items: stretch;
   }
 
   .page-content {
