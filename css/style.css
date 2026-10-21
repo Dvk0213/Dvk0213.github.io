@@ -10,6 +10,7 @@
   --text: #000000;
   --text-muted: rgba(0, 0, 0, 0.35);
   --link: #399EE3;
+  --rule: 1px solid rgba(0, 0, 0, 0.12);
   --font: 'Helvetica', 'Helvetica Neue', Arial, sans-serif;
   --content-width: 900px;
   --page-padding: 22px;
@@ -62,6 +63,8 @@ img {
 /* ── Header ───────────────────────────────────────────────── */
 .site-header {
   padding: 24px 0 16px;
+  border-bottom: var(--rule);
+  margin-bottom: 20px;
 }
 
 .header-inner {
@@ -187,7 +190,9 @@ main {
 
 /* ── News Section ─────────────────────────────────────────── */
 .news-section {
-  margin-top: 36px;
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: var(--rule);
 }
 
 .news-heading {
@@ -554,7 +559,7 @@ a.band-name:active {
 
 .pub-entry-divided {
   padding-bottom: 20px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  border-bottom: var(--rule);
 }
 
 .pub-entry .entry-title {
@@ -645,7 +650,9 @@ a.band-name:active {
 }
 
 .misc-heading-spaced {
-  margin-top: 28px;
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: var(--rule);
 }
 
 /* ── Responsive ───────────────────────────────────────────── */
